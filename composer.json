@@ -10,8 +10,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "dwoodard/neo4j-eloquent": "^1.0",
+        "easyrdf/easyrdf": "^1.1",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "lougoudoro/neoeloquent": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -86,5 +89,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "neoeloquent": {
+            "type": "vcs",
+            "url": "https://github.com/lougoudoro/NeoEloquent"
+        }
+    }
 }

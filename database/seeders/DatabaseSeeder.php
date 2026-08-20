@@ -2,6 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Maladie;
+use App\Models\Plante;
+use App\Models\PlanteMaladie;
+use App\Models\Savoir;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -21,5 +25,9 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        Plante::factory(500)->create();
+        Maladie::factory(105)->create();
+        Savoir::factory(1000)->create();
     }
 }
